@@ -1,0 +1,151 @@
+:root {
+  --headerColor: #39aebc;
+  --whiteColor: #ffffff;
+  --bg-transparent: rgba(0, 0, 0, 0.5);
+  --borderColor: #c1c1c1;
+  --linkColor: #41b494;
+  --btn-primary: #41b494;
+  --bg-remove: #f2fbf9;
+  --redColor: #f00;
+  --greenColor: #5ddb78;
+  --btn-bg: #f6f6f6;
+}
+
+.App {
+  max-width: 1320px;
+  margin: auto;
+}
+h3 {
+  color: var(--whiteColor);
+}
+.header {
+  background-color: var(--headerColor);
+  padding: 24px;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrowIcon {
+  filter: invert(1);
+  cursor: pointer;
+}
+.openPopup {
+  display: block;
+}
+.closePopup {
+  display: none;
+}
+.segment-wrapper {
+  text-align: center;
+  padding: 30px 0;
+}
+.popup-main {
+  position: absolute;
+  height: 100vh;
+  background: var(--bg-transparent);
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+  top: 0;
+}
+.popup-wrapper {
+  background-color: var(--whiteColor);
+  height: 100%;
+  width: 100%;
+  max-width: 570px;
+  margin: auto;
+}
+.popup-content {
+  text-align: left;
+}
+.popup-wrap {
+  padding: 24px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+.popup-dot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  font-size: 13px;
+}
+.popup-dot span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.redDot {
+  background-color: var(--redColor);
+}
+.greenDot {
+  background-color: var(--greenColor);
+}
+.save-btn {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 12px;
+  gap: 12px;
+  background: var(--btn-bg);
+  width: 100%;
+  max-width: 520px;
+  padding: 30px 24px;
+}
+.segement-input {
+  width: 90%;
+  border: 1px solid var(--borderColor);
+  padding: 12px;
+  border-radius: 4px;
+  appearance: none;
+}
+.segment-w {
+  max-width: 420px;
+}
+.add-schema-btn {
+  font-size: 14px;
+  color: var(--linkColor);
+}
+.schema-row {
+  margin: 12px 0;
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.btn-primary {
+  background: var(--btn-primary);
+  color: var(--whiteColor);
+}
+.btn {
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.cancel-btn {
+  background: var(--whiteColor);
+  color: var(--redColor);
+  border: 1px solid var(--borderColor);
+}
+
+.remove-ic {
+  border: none;
+  background: var(--bg-remove);
+  cursor: pointer;
+}
+.downIcon {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
